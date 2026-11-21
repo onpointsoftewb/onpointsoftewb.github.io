@@ -67,12 +67,13 @@ E-posta: <a href="mailto:onpointsoftewb@gmail.com">onpointsoftewb@gmail.com</a><
 <p>Bu veriler her zaman telefonunda tutulur. Apple ya da Google hesabı bağladıysan ayrıca Firebase Firestore'a da kaydedilir. Misafir hesapların ilerlemesi buluta yazılmaz; hesap bağlandığında buluta aktarılır.</p>
 
 <h3>Herkese açık profil ve arkadaşlar</h3>
-<p>Hesap bağladıysan ve sıralamaya ya da arkadaş özelliğine katıldıysan diğer kullanıcılar şunları görebilir: takma adın, avatarın, seviyen, toplam XP'n, ünvanın, EWB Master durumun ve vitrine koyduğun en fazla üç rozet. Türkiye sıralamasından istediğin zaman ayrılabilirsin. Ayarlar'daki "İsmimi Gizle" seçeneğini açarsan takma adın herkese açık profilinde tutulmaz; diğer kullanıcılar yalnızca baş harfini görür.</p>
+<p>Hesap bağladıysan ve sıralamaya ya da arkadaş özelliğine katıldıysan diğer kullanıcılar şunları görebilir: takma adın, avatarın, seviyen, toplam XP'n, ünvanın, EWB Master durumun ve vitrine koyduğun en fazla üç rozet. Türkiye sıralamasından istediğin zaman ayrılabilirsin. Liderlik ekranındaki "İsmimi gizle" seçeneğini açarsan takma adın herkese açık profilinde tutulmaz; diğer kullanıcılar yalnızca baş harfini görür.</p>
 <p>Arkadaş özelliği için sana bir arkadaş ID'si verilir. ID'n yalnızca sana gösterilir; başkası seni ancak ID'ni paylaşırsan ekleyebilir. Arkadaşlıklar ve arkadaşlık istekleri, iki tarafın kullanıcı kimliğiyle birlikte saklanır.</p>
 <p>Bir kişiyi gizlediğinde bu bilgi yalnızca telefonunda tutulur; karşı taraf öğrenmez.</p>
 
 <h3>Kullanıcı bildirimleri</h3>
-<p>Bir kullanıcıyı bildirdiğinde telefonunun e-posta uygulaması destek adresimize hazır bir taslakla açılır. Taslakta seçtiğin sebep, bildirdiğin kişinin takma adı ve kullanıcı kimliği ile senin kullanıcı kimliğin yazar. Bildirim yalnızca e-postayı gönderirsen bize ulaşır; e-posta adresin ve yazdıkların da bize gelir. Bu e-postaları yalnızca biz okuruz; bildirilen kişi kimin bildirdiğini göremez.</p>
+<p>Bildirme yalnızca hesap bağlamış kullanıcılara açıktır ve aynı kişiyi bir kez bildirebilirsin. Bir kullanıcıyı bildirdiğinde Firestore'a senin kullanıcı kimliğin ve hesabının e-posta adresi, bildirdiğin kişinin kullanıcı kimliği ve takma adı, seçtiğin sebep ve zamanı kaydedilir. E-posta adresin yalnızca bildiriminin sonucunu sana bildirmek için kullanılır. Bu kayıtları yalnızca biz görürüz; bildirilen kişi kimin bildirdiğini göremez.</p>
+<p>Hesap bağladıysan gerçek takma adın (adını gizlemiş olsan da) ve hesabının e-posta adresi, yalnızca senin ve bizim görebildiğimiz özel bir kayıtta tutulur. Bu kayıt, hakkında bir bildirim gelirse sana ulaşabilmemiz için kullanılır. Takma adın topluluk kurallarına uymuyorsa adını "Öğrenci" gibi genel bir adla değiştirebilir, değiştirme hakkını kısıtlayabilir ya da bir kez yeni ad seçme hakkı verebiliriz; böyle bir durumda uygulamada bilgilendirilirsin.</p>
 
 <h3>Destek e-postaları</h3>
 <p>Bize e-posta gönderdiğinde e-posta adresin ve yazdıkların bize ulaşır. Sorununu daha hızlı çözebilmemiz için uygulama taslağın altına uygulama sürümünü, telefonunun işletim sistemini ve kullanıcı kimliğini ekler. Bu satırı silerek de gönderebilirsin.</p>
@@ -132,7 +133,7 @@ E-posta: <a href="mailto:onpointsoftewb@gmail.com">onpointsoftewb@gmail.com</a><
 <h2>7. Ne kadar süre saklıyoruz?</h2>
 <ul>
   <li><strong>Hesap ve ilerleme verileri:</strong> hesabın durduğu sürece. Hesabını sildiğinde buluttaki ilerlemen, herkese açık profilin, arkadaş ID'n, arkadaşlıkların ve Firebase hesabın silinir; telefonundaki veriler de temizlenir. Apple ile giriş yaptıysan Apple izni de iptal edilir.</li>
-  <li><strong>Kullanıcı bildirimleri:</strong> destek e-postaları gibi; incelendikten sonra makul bir süre saklanır, istersen silinir. Hesabını silmen, daha önce gönderilmiş bildirim e-postalarını silmez.</li>
+  <li><strong>Kullanıcı bildirimleri:</strong> incelenip sonucu sana bildirilene kadar ve sonrasında, aynı kişinin tekrar tekrar bildirilmesini önlemek için makul bir süre saklanır; istersen silinir. Hesabını silmen, gönderdiğin ya da hakkında gönderilmiş bildirimleri hemen silmez.</li>
   <li><strong>Destek e-postaları:</strong> talebin çözülene kadar ve sonrasında makul bir süre; istersen silinir.</li>
   <li><strong>Satın alma kayıtları:</strong> Apple, Google ve RevenueCat, satın alma kayıtlarını kendi yasal ve mali yükümlülükleri gereği hesabın silinse de saklayabilir. RevenueCat'teki kaydının silinmesini e-postayla isteyebilirsin.</li>
   <li><strong>Analytics ve Crashlytics verileri:</strong> Google'ın belirlediği süreler boyunca; Analytics'teki kullanıcı düzeyindeki veriler en fazla 14 ay saklanır, sonrasında yalnızca toplu istatistikler kalır.</li>
@@ -143,7 +144,7 @@ E-posta: <a href="mailto:onpointsoftewb@gmail.com">onpointsoftewb@gmail.com</a><
 <p>Uygulamanın içinden yapabileceklerin:</p>
 <ul>
   <li>Takma adını ve avatarını değiştirmek: Profil sekmesi.</li>
-  <li>Takma adını diğer kullanıcılardan gizlemek: Ayarlar &gt; İsmimi Gizle.</li>
+  <li>Takma adını diğer kullanıcılardan gizlemek: Liderlik ekranı &gt; Türkiye sekmesi &gt; İsmimi gizle.</li>
   <li>Türkiye sıralamasından ayrılmak ve arkadaşlarını kaldırmak: Liderlik ekranı.</li>
   <li>Kişiselleştirilmiş reklam iznini değiştirmek: 3. bölümdeki “Reklamlar” başlığına bak.</li>
   <li>Hesabını ve tüm verilerini silmek: Ayarlar &gt; Hesap Yönetimi &gt; Hesabımı Sil.</li>
